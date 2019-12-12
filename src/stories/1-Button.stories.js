@@ -15,3 +15,9 @@ export const emoji = () => (
     </span>
   </Button>
 );
+
+emoji.story = {
+  parameters: {
+    status: ['deprecated']
+  }
+}
