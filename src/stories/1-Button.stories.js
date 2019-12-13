@@ -10,18 +10,14 @@ export const text = () => <Button onClick={action('clicked')}>Hello Button</Butt
 
 export const emoji = () => (
   <Button onClick={action('clicked')}>
-    <span role="img" aria-label="so cool">
-      😀 😎 👍 💯
-    </span>
+    This button might be broken <span role="img" aria-label="grimmacing emoji">😬</span>
   </Button>
 );
 
 emoji.story = {
   parameters: {
     status: 'deprecated',
-    statusDescription: `
-      # Don't ever use this component. It is broken!
-    `
+    statusDescription: `This component doesn't work as expected. It is currently being replaced by the 'Pet Moji' button in the product and will be removed from the design system in v2.0!`
   }
 }
 
@@ -36,9 +32,7 @@ export const moreEmoji = () => (
 moreEmoji.story = {
   parameters: {
     status: 'development',
-    statusDescription: `
-      # This is a work in progress or an experiment. Probably don't use it.
-    `
+    statusDescription: `This component is experimenting with the concept of fire AND basketballs being used together. It is just an experiment for now.`
   }
 }
 
@@ -53,9 +47,7 @@ export const bowieMoji = () => (
 bowieMoji.story = {
   parameters: {
     status: 'review',
-    statusDescription: `
-      # This is in eng/design review. It's api may still change!
-    `
+    statusDescription: `Currently working through design review. Will need to update based on feedback, but this component is targeting v1.6 release.`
   }
 }
 
@@ -70,8 +62,6 @@ export const petMoji = () => (
 petMoji.story = {
   parameters: {
     status: 'published',
-    statusDescription: `
-      # This component has been published! Use it 'til your heart's content!
-    `
+    statusDescription: `This button is very cute and it should be used as much as you'd like!`
   }
 }
