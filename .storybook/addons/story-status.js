@@ -237,7 +237,7 @@ const TooltipContent = styled.div`
   }
 
   .slide {
-    padding: 10px 5px;
+    padding: 8px 10px 5px 10px;
     width: 100%;
     flex: 0 0 100%;
     text-align: center;
